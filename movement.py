@@ -5,7 +5,7 @@
 class Movement():
 
     stamina = 100
-    def __init__(self, move_forward, move_back, slip, stamina, duck):
+    def __init__(self, move_forward =None, move_back=None, slip= None, stamina = None, duck = None):
         self.move_forward = move_forward
         self.move_back = move_back
         self.slip = slip
@@ -41,6 +41,10 @@ class Movement():
 
 # Here will create differant objects to resemble differant styles of moving
 
-aggresive = Movement()
 
-print(aggresive)
+
+
+a = Movement(True, False,True, True, True)
+print(a.defend())
+print(a.inandout())
+print(a.charging_forward())
